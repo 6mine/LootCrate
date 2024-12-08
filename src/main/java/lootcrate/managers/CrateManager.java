@@ -140,6 +140,7 @@ public class CrateManager extends BasicManager {
         crate.addOption(CrateOptionType.HOLOGRAM_OFFSET_X, 0.5D);
         crate.addOption(CrateOptionType.HOLOGRAM_OFFSET_Y, 1.8D);
         crate.addOption(CrateOptionType.HOLOGRAM_OFFSET_Z, 0.5D);
+        crate.addOption(CrateOptionType.CHEST_TITLE, "large_sokr");
     }
 
     public Crate getCrateFromItemID(int id)

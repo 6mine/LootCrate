@@ -193,15 +193,8 @@ public abstract class BaseFrame implements Frame, Listener, Pageable {
     @Override
     public void generateNavigation() {
 
-        this.setItem(getSize() - 1, new GUIItem(getSize() - 1, navItems.getNavBlocker()));
-        this.setItem(getSize() - 2, new GUIItem(getSize() - 2, navItems.getNavBlocker()));
         this.setItem(getSize() - 3, new GUIItem(getSize() - 3, navItems.getNavNext()));
-        this.setItem(getSize() - 4, new GUIItem(getSize() - 4, navItems.getNavBlocker()));
-        this.setItem(getSize() - 5, new GUIItem(getSize() - 5, navItems.getNavClose()));
-        this.setItem(getSize() - 6, new GUIItem(getSize() - 6, navItems.getNavBlocker()));
         this.setItem(getSize() - 7, new GUIItem(getSize() - 7, navItems.getNavPrev()));
-        this.setItem(getSize() - 8, new GUIItem(getSize() - 8, navItems.getNavBlocker()));
-        this.setItem(getSize() - 9, new GUIItem(getSize() - 9, navItems.getNavBlocker()));
     }
 
     @EventHandler
@@ -238,18 +231,6 @@ public abstract class BaseFrame implements Frame, Listener, Pageable {
 
         if (e.getAction() == InventoryAction.MOVE_TO_OTHER_INVENTORY && !(this instanceof ShiftClickAllowed)) {
             e.setCancelled(true);
-            return;
-        }
-
-        //override the guiclick
-        if (e.getCurrentItem().equals(navItems.getNavBlocker())) {
-            e.setCancelled(true);
-            return;
-        }
-
-        if (e.getCurrentItem().equals(navItems.getNavClose())) {
-            e.setCancelled(true);
-            player.closeInventory();
             return;
         }
 

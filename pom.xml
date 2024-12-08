@@ -96,7 +96,7 @@
             <artifactId>maven-jar-plugin</artifactId>
             <version>2.3.1</version>
             <configuration>
-               <outputDirectory>F:\Spigot Test Servers\1.20.4\plugins</outputDirectory>
+               <outputDirectory>H:\</outputDirectory>
             </configuration>
          </plugin>
          <plugin>

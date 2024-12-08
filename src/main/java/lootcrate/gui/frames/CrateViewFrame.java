@@ -25,7 +25,7 @@ public class CrateViewFrame extends ExtendedFrame implements Listener {
     private SortType sortType;
 
     public CrateViewFrame(LootCrate plugin, Player p, Crate crate) {
-        super(plugin, p, crate.getName());
+        super(plugin, p, (String) crate.getOption(CrateOptionType.CHEST_TITLE).getValue());
 
         this.plugin = plugin;
         this.crate = plugin.getCacheManager().getCrateById(crate.getId());

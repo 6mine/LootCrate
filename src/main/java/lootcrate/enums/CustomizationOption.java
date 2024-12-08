@@ -1,10 +1,6 @@
 package lootcrate.enums;
 
 public enum CustomizationOption {
-    NAVIGATION_BLOCKER_MATERIAL("navigation-blocker-material"),
-    NAVIGATION_BLOCKER_NAME("navigation-blocker-name"),
-    NAVIGATION_CLOSE_MATERIAL("navigation-close-material"),
-    NAVIGATION_CLOSE_NAME("navigation-close-name"),
     NAVIGATION_NEXT_MATERIAL("navigation-next-material"),
     NAVIGATION_NEXT_NAME("navigation-next-name"),
     NAVIGATION_PREVIOUS_MATERIAL("navigation-previous-material"),

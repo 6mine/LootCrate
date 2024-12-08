@@ -13,7 +13,9 @@ public enum CrateOptionType {
     HOLOGRAM_OFFSET_Z("Hologram-Offset-Z", DataType.BOOLEAN),
     ANIMATION_STYLE("Animation-Style", DataType.STRING),
     SORT_TYPE("Sort-Type", DataType.STRING),
-    COOLDOWN("Cooldown", DataType.INTEGER);
+    COOLDOWN("Cooldown", DataType.INTEGER),
+    CHEST_TITLE("Chest-Title", DataType.STRING);
+
 
     // CRATE_FORMAT("Crate-Format", DataType.MAP);
     String key;

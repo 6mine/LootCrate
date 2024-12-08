@@ -20,10 +20,6 @@ public class NavItems
         this.customizationManager = plugin.getCustomizationManager();
     }
 
-    public ItemStack getNavClose()
-    {
-        return new GUIItem(0, customizationManager.parseMaterial(CustomizationOption.NAVIGATION_CLOSE_MATERIAL), customizationManager.parseName(CustomizationOption.NAVIGATION_CLOSE_NAME)).getItemStack();
-    }
     public ItemStack getNavNext()
     {
         return new GUIItem(0, customizationManager.parseMaterial(CustomizationOption.NAVIGATION_NEXT_MATERIAL), customizationManager.parseName(CustomizationOption.NAVIGATION_NEXT_NAME)).getItemStack();
@@ -31,9 +27,5 @@ public class NavItems
     public ItemStack getNavPrev()
     {
         return new GUIItem(0, customizationManager.parseMaterial(CustomizationOption.NAVIGATION_PREVIOUS_MATERIAL), customizationManager.parseName(CustomizationOption.NAVIGATION_PREVIOUS_NAME)).getItemStack();
-    }
-    public ItemStack getNavBlocker()
-    {
-        return new GUIItem(0, customizationManager.parseMaterial(CustomizationOption.NAVIGATION_BLOCKER_MATERIAL), customizationManager.parseName(CustomizationOption.NAVIGATION_BLOCKER_NAME)).getItemStack();
     }
 }

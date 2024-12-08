@@ -35,16 +35,16 @@ public class CrateAccessListener implements Listener {
             return;
         }
 
-        // if left click, call open event
-        if (action == Action.LEFT_CLICK_BLOCK) {
+        // if left click + shift, call open event
+        if (action == Action.LEFT_CLICK_BLOCK && p.isSneaking()) {
             CrateViewEvent event = new CrateViewEvent(crate, p, e.getLocation());
             Bukkit.getPluginManager().callEvent(event);
             if (event.isCancelled())
                 e.setCancelled(true);
         }
 
-        // if it was right click, check if key
-        if (action == Action.RIGHT_CLICK_BLOCK) {
+        // if it was left click, check if key
+        if (action == Action.LEFT_CLICK_BLOCK) {
             CrateOpenEvent event = new CrateOpenEvent(crate, p, e.getLocation());
             Bukkit.getPluginManager().callEvent(event);
             if (event.isCancelled())
